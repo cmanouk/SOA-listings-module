@@ -1,12 +1,11 @@
 # Project Name
 
-Thanos'Gauntlet: Trulia Replica:
+Thanos' Gauntlet: Trulia Replica
 a replica of a listing on Trulia with a particular focus on front-end functionality.
 
 ## Related Projects
 
   - https://github.com/thanosgauntletfec/jpanay-fec-service
-  - https://github.com/thanosgauntletfec/jsullins-fec-service
   - https://github.com/thanosgauntletfec/mattc-fec-service
 
 ## Table of Contents
@@ -36,7 +35,7 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 ## Development
 
-> Some development information
+> This project was intended to highlight front end functionality. Of course if this were to be moved into production, MySQL schema would have included join tables and the backend would have been optimized. This project uses AWS' infrastructure (Cloudfront and S3) to serve static assets, yielding a 95/100 load score.
 
 ### Installing Dependencies
 
