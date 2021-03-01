@@ -1,0 +1,7 @@
+.vscode
+node_modules
+.env
+.nvmrc
+tests
+./client/styles.scss
+./public/scores-bundle.js

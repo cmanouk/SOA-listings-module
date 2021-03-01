@@ -1,0 +1,430 @@
+#app-chase{
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Mulish', sans-serif;
+    text-decoration: none;
+  }
+
+  .what-locals-say {
+    width: 980px;
+    max-width: 980px;
+    padding: 16px;
+    box-sizing: border-box;
+    background: rgb(245, 246, 247);
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .what-locals-say h3 {
+    margin: 16px 0 12px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: rgb(59, 65, 68);
+  }
+
+  .what-locals-say p {
+    color: rgb(134, 144, 153);
+  }
+
+  .what-locals-say-anchor, button {
+    cursor: pointer;
+  }
+
+  .city-scores-container {
+    padding-top: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .city-scores-container--btn {
+    padding: 8px 16px;
+    height: 42px;
+    width: 84px;
+    font-size: 14px;
+    color: rgb(59, 65, 68);
+    border-radius: 8px;
+    background: white;
+    border: 1.75px solid rgb(232, 233, 234);
+    font-weight: bold;
+    outline: none;
+    margin-bottom: 4px;
+    align-content: center;
+  }
+
+  .city-scores-container--btn:hover {
+    background: rgb(232, 233, 234);
+  }
+
+  .city-scores-container--btn:active {
+    background: gray;
+    color: white;
+  }
+
+  .see-less {
+    width: 100px;
+  }
+
+  .indv-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    width: 33.333%;
+    box-sizing: border-box;
+    padding-right: 24px;
+    margin-bottom: 16px;
+  }
+
+  .indv-score--percentage {
+    display: flex;
+    align-items: center;
+    background: rgb(224, 247, 248);
+    border-radius: 8px;
+    padding: 4px 8px;
+    width: 96px;
+    height: 32px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .indv-score--percentage__icon {
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+    text-decoration: none;
+  }
+
+  .indv-score--percentage__icon .thirty-svg {
+    height: 24px;
+    width: 24px;
+    margin-top: -3px;
+  }
+
+  .indv-score--percentage__score {
+    color: rgb(0, 120, 130);
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: -5px;
+    margin-left: 3px;
+  }
+
+  .indv-score--criteria {
+    font-size: 14px;
+    font-weight: 400;
+    width: 50%;
+    color: rgb(59, 65, 68);
+  }
+
+  .learn-more {
+    box-sizing: border-box;
+    height: 48px;
+    font-size: 12px;
+    padding-top: 4px;
+    padding-bottom: 24px;
+  }
+
+  .learn-more a {
+    color: rgb(0, 120, 130);
+    text-decoration: none;
+  }
+
+  .testimonials {
+    box-sizing: border-box;
+    padding-bottom: 16px;
+  }
+
+  .testimonials--reviews {
+    width: 204%;
+    margin-left: -1%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 1s ease-in-out;
+  }
+
+  .testimonials--btns {
+    display: flex;
+    font-size: 16px;
+  }
+
+  .testimonials--btns button {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    margin-right: 2px;
+    font-weight: 700;
+    outline: none;
+  }
+
+  .testimonials--btns .inactive {
+    background: rgb(245, 246, 247);
+    color: #3B4144;
+  }
+
+  .testimonials--btns .inactive:hover {
+    background: rgb(232, 233, 234);
+  }
+
+  .testimonials--btns .active {
+    background: white;
+    color: rgb(0, 120, 130);
+    border: 1.75px solid rgb(232, 233, 234);
+  }
+
+  .testimonials--reviews__card {
+    height: 345px;
+    max-height: 345px;
+    width: 11.5%;
+    margin: 0 .5%;
+    box-sizing: border-box;
+    padding: 32px;
+    color: white;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .testimonials--reviews__card-gradient {
+    content: '';
+    height: 15%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+  }
+
+  .card--header {
+    display: flex;
+    align-items: center;
+  }
+
+  .card--header__img {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card--header__info span {
+    font-size: 10px;
+  }
+
+  .card--header__info h6 {
+    margin-bottom: -5px;
+  }
+
+  .card--header__crcl {
+    margin: 0 6px;
+  }
+
+  .card--body {
+    padding: 24px 0;
+    font-weight: 500;
+    height: 67%;
+    max-height: 67%;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  .card--body em {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 1.25px;
+  }
+
+  .twenty-svg {
+    height: 22px;
+    width: 22px;
+    z-index: 1;
+    text-decoration: none;
+  }
+
+  .thirty-svg {
+    height: 28px;
+    width: 28px;
+    z-index: 1;
+    text-decoration: none;
+  }
+
+  .twenty-svg svg, .thirty-svg svg {
+    height: 100%;
+    width: 100%;
+  }
+
+  .card--stats {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card--stats__likes {
+    display: flex;
+    align-items: center;
+  }
+
+  .scroll-btn {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border: 1px solid rgb(232, 233, 234);
+    cursor: pointer;
+    position: absolute;
+    bottom: 190px;
+    transition: .1s ease-in-out;
+  }
+
+  .scroll-btn:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .scroll-btn:active {
+    box-shadow: none;
+    background: gray;
+    border: 1px solid gray;
+    transform: scale(1);
+  }
+
+  .right-scroll {
+    right: 0;
+  }
+
+  .right-scroll:active {
+    color: #FFFFFF;
+  }
+
+  .left-scroll {
+    left: 0;
+  }
+
+  .modal--testimonials {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5000;
+    min-height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(20px);
+  }
+
+  .modal-single {
+    position: relative;
+    z-index: 6000;
+  }
+
+  .modal-single .testimonials--reviews__card {
+    height: 667px;
+    max-height: 667px;
+    width: 375px;
+    margin: 0 auto;
+  }
+
+  .modal-single .testimonials--reviews__card .card--body {
+    height: 80%;
+    max-height: 80%
+  }
+
+  .x-btn {
+    position: absolute;
+    top: 42px;
+    right: 32px;
+    z-index: 10000;
+    max-height: 20px;
+    max-width: 20px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .x-btn:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .x-btn:active {
+    background: grey;
+    border: 4px solid grey;
+  }
+
+  .x-btn .thirty-svg {
+    margin-left: 2px;
+  }
+
+  .modal-all {
+    border-radius: 8px;
+    background: white;
+    padding: 32px;
+    position: relative;
+    z-index: 6000;
+  }
+
+  .modal-all--testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+    width: 80vw;
+    overflow: scroll;
+  }
+
+  .modal-all .testimonials--reviews__card {
+    width: 24%;
+    margin: .5%;
+  }
+
+  .modal-all .testimonials--btns .inactive {
+    background: #FFFFFF;
+  }
+
+  .modal-all .testimonials--btns .inactive:hover {
+    background: rgb(232, 233, 234);
+  }
+}
+
+#app {
+  #app-chase {
+    grid-row-start: 4;
+    grid-column-start: 2;
+  }
+}
